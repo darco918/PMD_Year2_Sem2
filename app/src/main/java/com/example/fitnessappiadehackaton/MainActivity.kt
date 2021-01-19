@@ -18,13 +18,48 @@ class MainActivity : AppCompatActivity() {
                     newIndex: Int,
                     newTab: AnimatedBottomBar.Tab
             ) {
-                Log.d("bottom_bar", "Selected index: $newIndex, title: ${newTab.title}")
-            }
+                if( newIndex == 0) {
+                    val fragment = ProfileFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }
+                else if( newIndex == 1) {
+                    val fragment = HomeFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }
+                else{
+                    val fragment = CalendarFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }            }
 
             // An optional method that will be fired whenever an already selected tab has been selected again.
             override fun onTabReselected(index: Int, tab: AnimatedBottomBar.Tab) {
                 Log.d("bottom_bar", "Reselected index: $index, title: ${tab.title}")
+                if( index == 0) {
+                    val fragment = ProfileFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }
+                else if( index == 1) {
+                    val fragment = HomeFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }
+                else{
+                    val fragment = CalendarFragment()
+                    supportFragmentManager.beginTransaction()
+                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .commit()
+                }
             }
+
         })
     }
 }

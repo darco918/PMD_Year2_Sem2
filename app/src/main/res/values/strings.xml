@@ -32,4 +32,13 @@
     <string name="corona_can_t_beat_a_powerlifter">Corona can\'t beat a Powerlifter!</string>
     <string name="profile">Profile</string>
     <string name="calendar">Calendar</string>
+    <string name="height">Height</string>
+    <string name="weight">Weight</string>
+    <string name="_78_kg">78 kg</string>
+    <string name="_182_cm">182 cm</string>
+    <string name="squats">Squats</string>
+    <string name="bench_press">Bench Press</string>
+    <string name="john_petrucci">John Petrucci</string>
+    <string name="deadlift">Deadlift</string>
+    <string name="_95kg">95kg</string>
 </resources>

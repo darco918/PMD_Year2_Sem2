@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="logInEditTextMarginLeft">30dp</dimen>
-    <dimen name="distanceButtonsFromCollection">55dp</dimen>
+    <dimen name="marginExercisesStatistics">25dp</dimen>
     <dimen name="marginButtonsFromCollection">20dp</dimen>
     <dimen name="marginStartIconCardview">10dp</dimen>
     <dimen name="marginStartProfile">30dp</dimen>
@@ -9,5 +9,6 @@
     <dimen name="smallTextSize">15sp</dimen>
     <dimen name="mediumTextSize">21sp</dimen>
     <dimen name="smallGap">9dp</dimen>
+    <dimen name="weightHeightMargin">50dp</dimen>
 
 </resources>
