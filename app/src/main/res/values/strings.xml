@@ -41,4 +41,7 @@
     <string name="john_petrucci">John Petrucci</string>
     <string name="deadlift">Deadlift</string>
     <string name="_95kg">95kg</string>
+    <string name="squat">Squat</string>
+    <string name="_6x6_100kg">6x6 100Kg</string>
+    <string name="_0">0</string>
 </resources>
