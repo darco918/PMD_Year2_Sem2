@@ -47,7 +47,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:text="@string/_6x6_100kg"
-            android:textSize="11sp"
+            android:textSize="12sp"
             android:textAllCaps="false"
             android:layout_marginEnd="15dp"
             android:textColor="@color/textLight"
@@ -129,6 +129,239 @@
             android:text="@string/_0"
 
             />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/benchContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/workoutHeight"
+        android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/inactive_workout_background"
+        app:layout_constraintTop_toBottomOf="@id/squatsContainer"
+        >
+
+        <TextView
+            android:id="@+id/tvSecondExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/bench_press"
+            android:textColor="@color/textLight"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/_6x6_80kg"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/textLight"
+            android:background="@drawable/choose_weight_button"
+            />
+
+        <Button
+            android:id="@+id/bench1"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_0"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/bench2"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/bench1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/bench3"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/bench2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/bench4"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/bench3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+        <Button
+            android:id="@+id/bench5"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/bench4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/bench6"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/bench5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/deadliftContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/workoutHeight"
+        android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/inactive_workout_background"
+        app:layout_constraintTop_toBottomOf="@id/benchContainer"
+        >
+
+        <TextView
+            android:id="@+id/tvThirdxercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/deadlift"
+            android:textColor="@color/textLight"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="23dp"
+            android:layout_marginTop="17dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="@string/_6x6_80kg"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:layout_marginEnd="15dp"
+            android:textColor="@color/textLight"
+            android:background="@drawable/choose_weight_button"
+            />
+
+        <Button
+            android:id="@+id/dead1"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_0"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/dead2"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/dead1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+            />
+
+        <Button
+            android:id="@+id/dead3"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/dead2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/dead4"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/dead3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+        <Button
+            android:id="@+id/dead5"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/dead4"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/dead6"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/dead5"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Chronometer
+        android:id="@+id/view_timer"
+        tools:targetApi="24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
