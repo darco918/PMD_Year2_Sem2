@@ -10,7 +10,7 @@
     <dimen name="mediumTextSize">21sp</dimen>
     <dimen name="smallGap">9dp</dimen>
     <dimen name="weightHeightMargin">50dp</dimen>
-    <dimen name="workoutHeight">140dp</dimen>
+    <dimen name="workoutHeight">125dp</dimen>
     <dimen name="workoutMarginHoriz">5dp</dimen>
     <dimen name="setMarginTop">60dp</dimen>
     <dimen name="setWidth">40dp</dimen>

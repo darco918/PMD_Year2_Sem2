@@ -1,5 +1,6 @@
 package com.example.fitnessappiadehackaton
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Color.rgb
@@ -17,9 +18,11 @@ class Workout1Activity : AppCompatActivity() {
     private lateinit var timer: CountDownTimer
 
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_workout1)
+        bottomTextTv.text = "Sweat the COVID out!"
         val countDownText = findViewById<TextView>(R.id.countdown)
         startSets(countDownText)
         setUpSpinners()
@@ -62,6 +65,7 @@ class Workout1Activity : AppCompatActivity() {
         activateSet(set,i-1, countDownText)
     }
 
+    @SuppressLint("SetTextI18n")
     private fun activateSet(set:Button, i : Int, countDownText:TextView){
         set.setBackgroundResource(R.drawable.round_button)
         if(i == 0) {set.text = "0"
@@ -70,6 +74,7 @@ class Workout1Activity : AppCompatActivity() {
         }
         else         set.text = i.toString()
         if(i == 6)   set.setTextColor(rgb(0,255,0))
+        bottomTextTv.text = "Congrats on finishing 5 reps! Rest 90sec if it was easy or 180sec if hard!"
         timer.cancel()
         startCounter(180,countDownText)
     }
@@ -92,7 +97,8 @@ class Workout1Activity : AppCompatActivity() {
                 id: Long
             ) {
                 val item: String = list[position]
-                Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()}
+               // Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()
+            }
         }
 
         spnBench.adapter = adapter
@@ -106,7 +112,8 @@ class Workout1Activity : AppCompatActivity() {
                 id: Long
             ) {
                 val item: String = list[position]
-                Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()}
+              //  Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()
+                }
         }
 
         spnDead.adapter = adapter
@@ -120,7 +127,8 @@ class Workout1Activity : AppCompatActivity() {
                 id: Long
             ) {
                 val item: String = list[position]
-                Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()}
+             //   Toast.makeText(this@Workout1Activity, "$item selected",Toast.LENGTH_SHORT).show()
+            }
         }
 
     }
@@ -155,5 +163,11 @@ class Workout1Activity : AppCompatActivity() {
                 vibrate()
             }
         }.start()
+    }
+
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        timer.cancel()
     }
 }
