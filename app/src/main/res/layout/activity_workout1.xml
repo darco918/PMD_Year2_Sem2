@@ -386,7 +386,7 @@
         <TextView
             android:layout_width="230dp"
             android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/view_timer"
+            app:layout_constraintLeft_toRightOf="@id/countdown"
             android:layout_marginBottom="10dp"
             app:layout_constraintBottom_toBottomOf="parent"
             android:textColor="@color/textLight"
@@ -397,9 +397,11 @@
             android:text="Congrats on finishing 5reps! Rest 90sec if it was easy or 3mins if hard!"
             />
 
-        <Chronometer
-            android:id="@+id/view_timer"
-            tools:targetApi="24"
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/countdown"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
             android:textSize="35sp"
             android:layout_marginStart="10dp"
             android:gravity="center_vertical"
@@ -407,11 +409,9 @@
             android:layout_width="wrap_content"
             android:layout_height="60dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
-            android:textStyle="bold"
-            />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintLeft_toLeftOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
