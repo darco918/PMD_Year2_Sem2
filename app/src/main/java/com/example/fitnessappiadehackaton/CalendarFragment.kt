@@ -1,16 +1,29 @@
 package com.example.fitnessappiadehackaton
 
+import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import jp.co.recruit_mp.android.lightcalendarview.LightCalendarView
+import jp.co.recruit_mp.android.lightcalendarview.accent.Accent
+import jp.co.recruit_mp.android.lightcalendarview.accent.DotAccent
+import kotlinx.android.synthetic.main.fragment_calendar.*
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
+lateinit var mcalendarView: LightCalendarView
+
+private val formatter = SimpleDateFormat("MMMM yyyy", Locale.getDefault())
 /**
  * A simple [Fragment] subclass.
  * Use the [CalendarFragment.newInstance] factory method to
@@ -35,6 +48,22 @@ class CalendarFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_calendar, container, false)
+    }
+
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        mcalendarView = view.findViewById(R.id.calendarView) as? LightCalendarView
+            ?: throw IllegalStateException("calendarView not found")
+        mcalendarView.apply {
+            monthFrom = Calendar.getInstance().apply { set(Calendar.MONTH, 0) }.time
+            monthTo = Calendar.getInstance().apply { set(Calendar.MONTH, 11) }.time
+            monthCurrent = Calendar.getInstance().time
+
+            // set the calendar view callbacks
+
+        }
     }
 
     companion object {

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorAccent1"
+    android:background="@color/colorBackground"
     tools:context=".CalendarFragment">
 
     <ImageView
@@ -18,5 +18,28 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ScrollView
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <jp.co.recruit_mp.android.lightcalendarview.LightCalendarView
+                android:id="@+id/calendarView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lcv_weekDayTextSize="18sp"
+                app:lcv_dayTextSize="18sp"
+                android:layout_marginTop="50dp"
+                app:lcv_textColor="@color/textLight"
+                app:lcv_selectionColor="@color/colorAccent2"
+                app:lcv_accentColor="@color/colorAccent3"
+                app:lcv_firstDayOfWeek="@integer/lcv_monday"/>
+
+        </LinearLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

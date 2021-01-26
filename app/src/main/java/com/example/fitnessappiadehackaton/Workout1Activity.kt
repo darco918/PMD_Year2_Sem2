@@ -165,7 +165,6 @@ class Workout1Activity : AppCompatActivity() {
         }.start()
     }
 
-
     override fun onBackPressed() {
         super.onBackPressed()
         timer.cancel()
