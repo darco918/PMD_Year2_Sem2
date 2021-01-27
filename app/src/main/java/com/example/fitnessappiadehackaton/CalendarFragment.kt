@@ -62,7 +62,8 @@ class CalendarFragment : Fragment() {
             monthCurrent = Calendar.getInstance().time
 
             // set the calendar view callbacks
-
+//            val monthAccents: Map<Date, List<Accent>> = monthEvents.mapValues { event -> DotAccent(radius = 10f, color = event.color, key = event) }
+//            view.setAccents(monthAccents)
         }
     }
 

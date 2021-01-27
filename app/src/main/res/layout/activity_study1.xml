@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".StudyActivity1">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/fitnessapp_logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvFirstTaskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/workoutHeight"
+        android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
+        android:layout_marginTop="75dp"
+        android:background="@drawable/inactive_workout_background"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tvFirstTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/first_exercise"
+            android:textColor="@color/textLight"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/first1"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_0"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/first2"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/first1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/first3"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/first2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/first4"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/first3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/tvSecondTaskContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/workoutHeight"
+        android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/inactive_workout_background"
+        app:layout_constraintTop_toBottomOf="@id/tvFirstTaskContainer"        >
+
+        <TextView
+            android:id="@+id/tvSecondTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/second_task"
+            android:textColor="@color/textLight"
+            android:textSize="25sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <Button
+            android:id="@+id/second1"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="@string/_0"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <Button
+            android:id="@+id/second2"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/second1"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/second3"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/second2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+
+            />
+
+        <Button
+            android:id="@+id/second4"
+            android:layout_width="@dimen/setWidth"
+            android:layout_height="@dimen/setWidth"
+            android:layout_marginStart="@dimen/setMarginStart"
+            android:layout_marginTop="@dimen/setMarginTop"
+            android:background="@drawable/round_inactive_button"
+            app:layout_constraintLeft_toRightOf="@+id/second3"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="@string/_0"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/finishButton"
+        android:layout_width="70dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:text="@string/finish"
+        android:textAllCaps="false"
+        android:textColor="@color/textLight"
+        android:background="@drawable/finish_button"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSecondTaskContainer" />
+
+
+
+    <!--    footer     -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:progress="50"
+            android:progressDrawable="@drawable/progress_bar_horizontal"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/bottomTextTv"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/countdown"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:textColor="@color/textLight"
+            android:textSize="12sp"
+            android:layout_marginHorizontal="10dp"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/countdown"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            android:textSize="35sp"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/textLight"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

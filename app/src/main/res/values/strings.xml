@@ -48,5 +48,7 @@
     <string name="_79_kg">79 Kg</string>
     <string name="your_weight">Your Weight:</string>
     <string name="finish">Finish</string>
+    <string name="first_exercise">First Exercise</string>
+    <string name="second_task">Second Task</string>
 
 </resources>

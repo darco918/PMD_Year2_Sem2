@@ -2,6 +2,7 @@ package com.example.fitnessappiadehackaton
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Color.rgb
 import android.os.*
@@ -27,6 +28,12 @@ class Workout1Activity : AppCompatActivity() {
         startSets(countDownText)
         setUpSpinners()
         startCounter(180,countDownText)
+
+        finishButton.setOnClickListener {
+            finishWorkout()
+        }
+
+
     }
 
     private fun startSets(countDownText:TextView) {
@@ -168,5 +175,16 @@ class Workout1Activity : AppCompatActivity() {
     override fun onBackPressed() {
         super.onBackPressed()
         timer.cancel()
+    }
+
+    private fun finishWorkout(){
+        //What happens when you finish the workout
+        timer.cancel()
+
+        //don't forget to save the workout details in shared preferences
+
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+
     }
 }
