@@ -1,5 +1,6 @@
 package com.example.fitnessappiadehackaton
 
+import android.content.ClipData
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -11,7 +12,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        bottom_bar.selectTabAt(1, true)
+
+
+        val fragment = HomeFragment()
+        supportFragmentManager.beginTransaction()
+            .add(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
+            .commit()
 
         bottom_bar.setOnTabSelectListener(object : AnimatedBottomBar.OnTabSelectListener {
             override fun onTabSelected(

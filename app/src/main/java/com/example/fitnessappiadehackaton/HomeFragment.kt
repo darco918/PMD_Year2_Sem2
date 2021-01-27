@@ -53,11 +53,6 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        workoutButton1.setOnClickListener {
-            val intent = Intent (activity, Workout1Activity::class.java)
-            startActivity(intent)
-        }
-
         add_btn.setOnClickListener {
             if (!clicked){
                 view.edit_btn.visibility = View.VISIBLE
@@ -70,8 +65,8 @@ class HomeFragment : Fragment() {
             addClicked()
         }
         edit_btn.setOnClickListener {
-            Toast.makeText(activity, "Edit Button Clicked!!", Toast.LENGTH_SHORT).show()
-        }
+            val intent = Intent (activity, Workout1Activity::class.java)
+            startActivity(intent)        }
         finger_btn.setOnClickListener {
             Toast.makeText(activity, "Finger button Clicked!", Toast.LENGTH_SHORT).show()
         }

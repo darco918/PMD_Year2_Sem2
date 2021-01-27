@@ -3,23 +3,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="?android:windowBackground"
+    android:background="@color/colorBackground"
     android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="45dp"
         android:tint="@android:color/white"
-        app:backgroundTint="@color/colorPrimary"
+        app:backgroundTint="@color/colorAccent3"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_calendar" />
+        app:srcCompat="@drawable/ic_plus" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/edit_btn"
@@ -29,6 +29,7 @@
         android:clickable="true"
         android:tint="@android:color/white"
         android:visibility="invisible"
+        app:backgroundTint="@color/colorAccent2"
         app:layout_constraintBottom_toTopOf="@+id/add_btn"
         app:layout_constraintEnd_toEndOf="@+id/add_btn"
         app:srcCompat="@drawable/ic_fitness" />
@@ -41,9 +42,10 @@
         android:clickable="true"
         android:tint="@android:color/white"
         android:visibility="invisible"
+        app:backgroundTint="@color/colorAccent1"
         app:layout_constraintBottom_toTopOf="@+id/edit_btn"
         app:layout_constraintEnd_toEndOf="@+id/edit_btn"
-        app:srcCompat="@drawable/ic_arrow" />
+        app:srcCompat="@drawable/ic_study" />
 
     <ImageView
         android:id="@+id/logo"
@@ -56,19 +58,51 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
 
-    <Button
-        android:id="@+id/workoutButton1"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="360dp"
+        android:textColor="@color/textLight"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/tip_to_start_a_new_workout_or_study_session_press_button"
+/>
 
-    <Button
-        android:id="@+id/studyButton1"
-        android:layout_width="wrap_content"
+    <TextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/textLight2"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/welcome_to_6x6"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="200dp"
+        android:textColor="@color/textLight"
+        android:textSize="20sp"
+        android:layout_marginHorizontal="20dp"
+        android:text="@string/let_s_get_you_back_on_track_with_your_studies_and_get_you_in_shape_like_corona_never_happened"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/procastination_is_not_for_winners_get_on_it"
+        android:textColor="@color/textLight"
+        android:textSize="14sp"
+        android:layout_marginStart="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="parent"/>
+/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

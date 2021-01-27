@@ -50,5 +50,9 @@
     <string name="finish">Finish</string>
     <string name="first_exercise">First Exercise</string>
     <string name="second_task">Second Task</string>
+    <string name="let_s_get_you_back_on_track_with_your_studies_and_get_you_in_shape_like_corona_never_happened">Let\'s get you back on track with your studies and get you in shape like corona never happened!</string>
+    <string name="welcome_to_6x6">Welcome to 6x6!</string>
+    <string name="tip_to_start_a_new_workout_or_study_session_press_button">Tip: To start a new workout or study session press + Button</string>
+    <string name="procastination_is_not_for_winners_get_on_it">Procastination is not for winners! Get on it!</string>
 
 </resources>
