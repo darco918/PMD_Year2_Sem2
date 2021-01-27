@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        bottom_bar.selectTabAt(1, true)
+
         bottom_bar.setOnTabSelectListener(object : AnimatedBottomBar.OnTabSelectListener {
             override fun onTabSelected(
                     lastIndex: Int,
@@ -21,19 +23,19 @@ class MainActivity : AppCompatActivity() {
                 if( newIndex == 0) {
                     val fragment = ProfileFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .add(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }
                 else if( newIndex == 1) {
                     val fragment = HomeFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .add(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }
                 else{
                     val fragment = CalendarFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .add(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }            }
 
@@ -43,19 +45,19 @@ class MainActivity : AppCompatActivity() {
                 if( index == 0) {
                     val fragment = ProfileFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .replace(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }
                 else if( index == 1) {
                     val fragment = HomeFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .replace(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }
                 else{
                     val fragment = CalendarFragment()
                     supportFragmentManager.beginTransaction()
-                        .replace(R.id.mainFragment, fragment, fragment.javaClass.simpleName)
+                        .replace(R.id.frameLayout, fragment, fragment.javaClass.simpleName)
                         .commit()
                 }
             }

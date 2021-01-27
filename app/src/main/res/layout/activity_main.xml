@@ -3,16 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/colorBackground"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/mainFragment"
+    <FrameLayout
+        android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        class="com.example.fitnessappiadehackaton.HomeFragment"
         app:layout_constraintBottom_toTopOf="@id/bottom_bar"
         app:layout_constraintTop_toTopOf="parent"/>
+
+
+<!--    <fragment-->
+<!--        android:id="@+id/mainFragment"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/bottom_bar"-->
+<!--        app:layout_constraintTop_toTopOf="parent"/>-->
+<!--        class="com.example.fitnessappiadehackaton.HomeFragment"-->
 
     <nl.joery.animatedbottombar.AnimatedBottomBar
         android:id="@+id/bottom_bar"
