@@ -1,6 +1,5 @@
 package com.example.fitnessappiadehackaton
 
-import android.content.ClipData
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -69,5 +68,10 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+    }
+
+    override fun onBackPressed() {
+        finishAffinity();
+        System.exit(0);
     }
 }

@@ -7,12 +7,10 @@ import android.graphics.Color
 import android.graphics.Color.rgb
 import android.os.*
 import androidx.appcompat.app.AppCompatActivity
-import android.util.Log
 import android.view.View
 import android.widget.*
 import androidx.annotation.RequiresApi
 import kotlinx.android.synthetic.main.activity_workout1.*
-import java.lang.reflect.Field
 
 class Workout1Activity : AppCompatActivity() {
     @RequiresApi(Build.VERSION_CODES.N)
@@ -24,7 +22,7 @@ class Workout1Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_workout1)
         bottomTextTv.text = "Sweat the COVID out!"
-        val countDownText = findViewById<TextView>(R.id.countdown)
+        val countDownText = findViewById<TextView>(R.id.countDownStudy)
         startSets(countDownText)
         setUpSpinners()
         startCounter(180,countDownText)
@@ -180,11 +178,8 @@ class Workout1Activity : AppCompatActivity() {
     private fun finishWorkout(){
         //What happens when you finish the workout
         timer.cancel()
-
         //don't forget to save the workout details in shared preferences
-
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this, CongratulationsActivity::class.java)
         startActivity(intent)
-
     }
 }

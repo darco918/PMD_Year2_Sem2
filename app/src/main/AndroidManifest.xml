@@ -11,6 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".CongratulationsActivity"></activity>
+        <activity android:name=".PreStudy1Activity" />
         <activity android:name=".StudyActivity1" />
         <activity android:name=".Workout1Activity" />
         <activity android:name=".LogInActivity" />

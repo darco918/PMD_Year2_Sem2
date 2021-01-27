@@ -68,8 +68,8 @@ class HomeFragment : Fragment() {
             val intent = Intent (activity, Workout1Activity::class.java)
             startActivity(intent)        }
         finger_btn.setOnClickListener {
-            Toast.makeText(activity, "Finger button Clicked!", Toast.LENGTH_SHORT).show()
-        }
+            val intent = Intent (activity, PreStudy1Activity::class.java)
+            startActivity(intent)          }
 
     }
         companion object {
