@@ -32,6 +32,7 @@
                 android:id="@+id/calendarView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
                 app:lcv_weekDayTextSize="18sp"
                 app:lcv_dayTextSize="18sp"
                 android:layout_marginTop="50dp"
