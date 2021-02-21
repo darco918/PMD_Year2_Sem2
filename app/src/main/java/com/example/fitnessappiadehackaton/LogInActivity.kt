@@ -10,12 +10,12 @@ class LogInActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_log_in)
-
-        val nextButton = findViewById<Button>(R.id.nextButton)
-        nextButton.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("gamertag",username.text )
-            startActivity(intent)
+//
+//        val nextButton = findViewById<Button>(R.id.nextButton)
+//        nextButton.setOnClickListener {
+//            val intent = Intent(this, MainActivity::class.java)
+//            intent.putExtra("gamertag",username.text )
+//            startActivity(intent)
         }
-    }
+
 }

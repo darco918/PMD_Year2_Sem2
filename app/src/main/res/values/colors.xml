@@ -3,13 +3,13 @@
     <color name="colorPrimaryDark">#33334B</color>
     <color name="navigationBarBackground">#202036</color>
     <color name="colorAccent">#03DAC5</color>
-    <color name="colorBackground">#27273E</color>
-    <color name="colorPrimary">#313149</color>
+    <color name="colorBackground">#29253d</color>
+    <color name="colorPrimary">#2f2b41</color>
     <color name="colorSecondary">#33334B</color>
-    <color name="colorAccent1">#9C42F5</color>
-    <color name="colorAccent2">#5D2DE1</color>
+    <color name="colorAccent1">#35B9E5</color>
+    <color name="colorAccent2">#10E8BC</color>
     <color name="colorAccent3">#FF00AA</color>
     <color name="textLight">#E0E0FF</color>
     <color name="textLight2">#fff</color>
-    
+    <color name="darkGrey">#656565</color>
 </resources>

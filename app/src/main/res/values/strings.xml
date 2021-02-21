@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Fitness App Iade Hackaton</string>
+    <string name="app_name">6x6 Fitness and Studying</string>
     <string name="home">Home</string>
     <string name="log_in">Sign In</string>
     <string name="username">Username</string>
@@ -58,5 +58,7 @@
     <string name="choose_your_second_task">Choose your second task</string>
     <string name="start">Start</string>
     <string name="congratulations">Congratulations!</string>
+    <string name="full_name">Full Name</string>
+    <string name="email">Email</string>
 
 </resources>

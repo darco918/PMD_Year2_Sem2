@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground"
+    tools:context=".SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/fullNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/full_name"
+            android:textColor="@color/textLight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/nameEditText"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:shadowColor="@color/textLight2"
+            android:textAlignment="center"
+            android:textColor="@color/textLight2"
+            android:textColorHint="@color/textLight2"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fullNameTv" />
+
+        <ImageView
+            android:id="@+id/imageUser"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_person"
+            app:layout_constraintBottom_toBottomOf="@+id/nameEditText"
+            app:layout_constraintStart_toStartOf="@+id/fullNameTv"
+            app:layout_constraintTop_toTopOf="@+id/nameEditText"
+            app:tint="@color/colorAccent2" />
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="@string/email"
+            android:textColor="@color/textLight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/nameEditText"
+            app:layout_constraintTop_toBottomOf="@id/imageUser" />
+
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:shadowColor="@color/textLight2"
+            android:textAlignment="center"
+            android:textColor="@color/textLight2"
+            android:textColorHint="@color/textLight2"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailTv" />
+
+        <ImageView
+            android:id="@+id/imageEmail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_email"
+            app:layout_constraintBottom_toBottomOf="@+id/emailEditText"
+            app:layout_constraintStart_toStartOf="@+id/fullNameTv"
+            app:layout_constraintTop_toTopOf="@+id/emailEditText"
+            app:tint="@color/colorAccent2" />
+
+        <TextView
+            android:id="@+id/weightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Weight"
+            android:textColor="@color/textLight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/nameEditText"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <Button
+            android:id="@+id/spinnerWeight"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableTint="@color/colorAccent2"
+            android:paddingEnd="5dp"
+            android:shadowColor="@color/textLight2"
+            android:text="99      | kg   "
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="@color/textLight2"
+            android:textColorHint="@color/textLight2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weightTv" />
+
+        <ImageView
+            android:id="@+id/imageWeight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_fitness"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerWeight"
+            app:layout_constraintStart_toStartOf="@+id/fullNameTv"
+            app:layout_constraintTop_toTopOf="@+id/spinnerWeight"
+            app:tint="@color/colorAccent2" />
+
+
+        <TextView
+            android:id="@+id/heightTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Height"
+            android:textColor="@color/textLight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@id/spinnerWeight"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditText" />
+
+        <Button
+            android:id="@+id/spinnerHeight"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:drawableTint="@color/colorAccent2"
+            android:paddingEnd="5dp"
+            android:shadowColor="@color/textLight2"
+            android:text="170     | cm"
+            android:textAlignment="textEnd"
+            android:textAllCaps="false"
+            android:textColor="@color/textLight2"
+            android:textColorHint="@color/textLight2"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/heightTv"
+            app:layout_constraintTop_toBottomOf="@+id/weightTv" />
+
+        <ImageView
+            android:id="@+id/imageHeight"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_height"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerWeight"
+            app:layout_constraintStart_toStartOf="@+id/heightTv"
+            app:layout_constraintTop_toTopOf="@+id/spinnerWeight"
+            app:tint="@color/colorAccent2" />
+
+        <TextView
+            android:id="@+id/passwordTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="12dp"
+            android:text="Password"
+            android:textColor="@color/textLight"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerHeight" />
+
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edit_text_bg"
+            android:shadowColor="@color/textLight2"
+            android:textAlignment="center"
+            android:textColor="@color/textLight2"
+            android:textColorHint="@color/textLight2"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordTv" />
+
+        <ImageView
+            android:id="@+id/imagePassword"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/ic_password"
+            app:layout_constraintBottom_toBottomOf="@+id/passwordEditText"
+            app:layout_constraintStart_toStartOf="@+id/fullNameTv"
+            app:layout_constraintTop_toTopOf="@+id/passwordEditText"
+            app:tint="@color/colorAccent2" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
