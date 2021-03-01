@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
+    android:background="@drawable/activity_bg"
     tools:context=".Workout1Activity">
 
     <ImageView
@@ -24,8 +24,7 @@
         android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
         android:layout_marginTop="75dp"
         android:background="@drawable/inactive_workout_background"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/tvFirstExercise"
@@ -33,37 +32,23 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/tauri"
             android:text="@string/squat"
             android:textColor="@color/textLight"
             android:textSize="25sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
-
-<!--        <Button-->
-<!--            android:layout_width="75dp"-->
-<!--            android:layout_height="23dp"-->
-<!--            android:layout_marginTop="17dp"-->
-<!--            app:layout_constraintTop_toTopOf="parent"-->
-<!--            app:layout_constraintRight_toRightOf="parent"-->
-<!--            android:text="@string/_6x6_100kg"-->
-<!--            android:textSize="12sp"-->
-<!--            android:textAllCaps="false"-->
-<!--            android:layout_marginEnd="15dp"-->
-<!--            android:textColor="@color/textLight"-->
-<!--            android:background="@drawable/choose_weight_button"-->
-<!--            />-->
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spnSquat"
             android:layout_width="100dp"
             android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/spinner_background"
             android:spinnerMode="dropdown"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/set1"
@@ -72,10 +57,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:text="@string/_0"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/set2"
@@ -84,9 +68,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/set1"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -97,9 +81,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/set2"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -110,11 +94,12 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/set3"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
+
         <Button
             android:id="@+id/set5"
             android:layout_width="@dimen/setWidth"
@@ -122,9 +107,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/set4"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -135,9 +120,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/set5"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -149,8 +134,7 @@
         android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
         android:layout_marginTop="15dp"
         android:background="@drawable/inactive_workout_background"
-        app:layout_constraintTop_toBottomOf="@id/squatsContainer"
-        >
+        app:layout_constraintTop_toBottomOf="@id/squatsContainer">
 
         <TextView
             android:id="@+id/tvSecondExercise"
@@ -158,23 +142,23 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/tauri"
             android:text="@string/bench_press"
             android:textColor="@color/textLight"
             android:textSize="25sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spnBench"
             android:layout_width="100dp"
             android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/spinner_background"
             android:spinnerMode="dropdown"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/bench1"
@@ -183,10 +167,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:text="@string/_0"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/bench2"
@@ -195,9 +178,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/bench1"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -208,9 +191,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/bench2"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -221,11 +204,12 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/bench3"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
+
         <Button
             android:id="@+id/bench5"
             android:layout_width="@dimen/setWidth"
@@ -233,9 +217,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/bench4"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -246,9 +230,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/bench5"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -260,8 +244,7 @@
         android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
         android:layout_marginTop="15dp"
         android:background="@drawable/inactive_workout_background"
-        app:layout_constraintTop_toBottomOf="@id/benchContainer"
-        >
+        app:layout_constraintTop_toBottomOf="@id/benchContainer">
 
         <TextView
             android:id="@+id/tvThirdxercise"
@@ -269,23 +252,23 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/tauri"
             android:text="@string/deadlift"
             android:textColor="@color/textLight"
             android:textSize="25sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatSpinner
             android:id="@+id/spnDead"
             android:layout_width="100dp"
             android:layout_height="35dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="10dp"
             android:background="@drawable/spinner_background"
             android:spinnerMode="dropdown"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="6dp"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/dead1"
@@ -294,10 +277,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
-            app:layout_constraintLeft_toLeftOf="parent"
             android:text="@string/_0"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/dead2"
@@ -306,10 +288,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
-            app:layout_constraintLeft_toRightOf="@+id/dead1"
-            app:layout_constraintTop_toTopOf="parent"
             android:text="@string/_0"
-            />
+            app:layout_constraintLeft_toRightOf="@+id/dead1"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <Button
             android:id="@+id/dead3"
@@ -318,9 +299,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/dead2"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -331,11 +312,12 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/dead3"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
+
         <Button
             android:id="@+id/dead5"
             android:layout_width="@dimen/setWidth"
@@ -343,9 +325,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/dead4"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
 
@@ -356,9 +338,9 @@
             android:layout_marginStart="@dimen/setMarginStart"
             android:layout_marginTop="@dimen/setMarginTop"
             android:background="@drawable/round_inactive_button"
+            android:text="@string/_0"
             app:layout_constraintLeft_toRightOf="@+id/dead5"
             app:layout_constraintTop_toTopOf="parent"
-            android:text="@string/_0"
 
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -370,31 +352,31 @@
         android:layout_marginHorizontal="@dimen/workoutMarginHoriz"
         android:layout_marginTop="15dp"
         android:background="@drawable/inactive_workout_background"
-        app:layout_constraintTop_toBottomOf="@id/deadliftContainer"
-        >
+        app:layout_constraintTop_toBottomOf="@id/deadliftContainer">
 
         <TextView
             android:id="@+id/yourWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/your_weight"
-            android:textSize="19sp"
             android:layout_marginStart="30dp"
+            android:text="@string/your_weight"
             android:textColor="@color/textLight"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="17sp"
+            android:fontFamily="@font/tauri"
             app:layout_constraintLeft_toLeftOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
 
         <TextView
+            android:id="@+id/weightTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/_79_kg"
-            android:textSize="19sp"
             android:layout_marginEnd="30dp"
+            android:text="@string/_79_kg"
             android:textColor="@color/textLight"
-            app:layout_constraintTop_toTopOf="parent"
+            android:textSize="19sp"
             app:layout_constraintEnd_toEndOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
@@ -403,10 +385,11 @@
         android:layout_height="25dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="15dp"
-        android:text="@string/finish"
-        android:textAllCaps="false"
-        android:textColor="@color/textLight"
         android:background="@drawable/finish_button"
+        android:text="@string/finish"
+        android:fontFamily="@font/tauri"
+        android:textAllCaps="false"
+        android:textColor="#000"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/weightContainer" />
 
@@ -416,8 +399,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        >
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -426,34 +408,20 @@
             android:layout_height="20dp"
             android:progress="50"
             android:progressDrawable="@drawable/progress_bar_horizontal"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/bottomTextTv"
-            android:layout_width="230dp"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toRightOf="@id/countDownStudy"
-            android:layout_marginBottom="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            android:textColor="@color/textLight"
-            android:textSize="12sp"
-            android:layout_marginHorizontal="10dp"
-            app:layout_constraintRight_toRightOf="parent"
-            />
-
-        <TextView
-            android:layout_gravity="center"
             android:id="@+id/countDownStudy"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:textStyle="bold"
-            android:textSize="35sp"
-            android:layout_marginStart="10dp"
-            android:gravity="center_vertical"
-            android:textColor="@color/textLight"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:gravity="center_vertical"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/textLight"
+            android:textSize="35sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"/>
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.constraintlayout.widget.ConstraintLayout>
+            app:layout_constraintLeft_toLeftOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

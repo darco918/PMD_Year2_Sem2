@@ -21,7 +21,6 @@ class Workout1Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_workout1)
-        bottomTextTv.text = "Sweat the COVID out!"
         val countDownText = findViewById<TextView>(R.id.countDownStudy)
         startSets(countDownText)
         setUpSpinners()
@@ -78,8 +77,8 @@ class Workout1Activity : AppCompatActivity() {
             set.setTextColor(rgb(255,0,0))
         }
         else         set.text = i.toString()
-        if(i == 6)   set.setTextColor(rgb(0,255,0))
-        bottomTextTv.text = "Congrats on finishing 5 reps! Rest 90sec if it was easy or 180sec if hard!"
+        if(i == 6)   set.setTextColor(rgb(0,0,0))
+
         timer.cancel()
         startCounter(180,countDownText)
     }

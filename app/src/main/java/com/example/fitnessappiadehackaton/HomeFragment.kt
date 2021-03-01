@@ -67,30 +67,8 @@ class HomeFragment : Fragment() {
         edit_btn.setOnClickListener {
             val intent = Intent (activity, Workout1Activity::class.java)
             startActivity(intent)        }
-        finger_btn.setOnClickListener {
-            val intent = Intent (activity, PreStudy1Activity::class.java)
-            startActivity(intent)          }
+    }
 
-    }
-        companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
 
     private fun addClicked() {
         setVisibility(clicked)
@@ -107,12 +85,10 @@ class HomeFragment : Fragment() {
         if (!clicked){
 
             edit_btn.startAnimation(fromBottom)
-            finger_btn.startAnimation(fromBottom)
             add_btn.startAnimation(rotateOpen)
         }
         else{
             edit_btn.startAnimation(toBottom)
-            finger_btn.startAnimation(toBottom)
             add_btn.startAnimation(rotateClose)
         }
     }
@@ -124,10 +100,10 @@ class HomeFragment : Fragment() {
     private fun setClickable(clicked: Boolean){
         if (!clicked){
             edit_btn.isClickable = true
-            finger_btn.isClickable = true
+
         }else{
             edit_btn.isClickable = false
-            finger_btn.isClickable = false
+
         }
     }
 }

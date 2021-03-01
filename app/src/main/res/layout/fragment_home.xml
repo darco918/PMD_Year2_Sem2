@@ -9,16 +9,17 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_btn"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="45dp"
         android:tint="@android:color/white"
-        app:backgroundTint="@color/colorAccent3"
+        app:backgroundTint="@color/colorAccent2"
         android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/ic_plus" />
+        app:srcCompat="@drawable/ic_plus"
+        android:focusable="true" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/edit_btn"
@@ -33,18 +34,6 @@
         app:layout_constraintEnd_toEndOf="@+id/add_btn"
         app:srcCompat="@drawable/ic_fitness" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/finger_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:tint="@android:color/white"
-        android:visibility="invisible"
-        app:backgroundTint="@color/colorAccent1"
-        app:layout_constraintBottom_toTopOf="@+id/edit_btn"
-        app:layout_constraintEnd_toEndOf="@+id/edit_btn"
-        app:srcCompat="@drawable/ic_study" />
 
     <ImageView
         android:id="@+id/logo"
@@ -60,48 +49,26 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="360dp"
-        android:textColor="@color/textLight"
-        android:textSize="20sp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/tip_to_start_a_new_workout_or_study_session_press_button"
-/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="100dp"
-        android:textColor="@color/textLight2"
-        android:textSize="30sp"
-        android:gravity="center"
-        android:layout_marginHorizontal="20dp"
-        android:text="@string/welcome_to_6x6"
-        />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="200dp"
         android:textColor="@color/textLight"
         android:textSize="20sp"
-        android:layout_marginHorizontal="20dp"
-        android:text="@string/let_s_get_you_back_on_track_with_your_studies_and_get_you_in_shape_like_corona_never_happened"
-        />
+        android:fontFamily="@font/tauri"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="60dp" />
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/procastination_is_not_for_winners_get_on_it"
-        android:textColor="@color/textLight"
-        android:textSize="14sp"
-        android:layout_marginStart="15dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-/>
-
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/tauri"
+        android:gravity="center"
+        android:text="@string/welcome_to_6x6"
+        android:textColor="@color/textLight2"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="20dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

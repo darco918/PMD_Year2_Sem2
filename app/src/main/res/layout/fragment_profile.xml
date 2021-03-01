@@ -1,23 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/colorBackground"
     android:layout_height="match_parent"
+    android:background="@color/colorSecondary"
     tools:context=".ProfileFragment">
 
     <ImageView
         android:id="@+id/logo"
         android:layout_width="80dp"
         android:layout_height="80dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="15dp"
         android:contentDescription="@string/app_name"
         android:src="@drawable/fitnessapp_logo"
-        android:layout_marginStart="30dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/profileImage"
@@ -35,170 +34,176 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-       android:layout_width="match_parent"
-       android:layout_marginTop="200dp"
-       android:background="@drawable/container_background"
-       app:layout_constraintTop_toTopOf="parent"
-       app:layout_constraintBottom_toBottomOf="parent"
-       android:layout_height="0dp">
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/container_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
             android:layout_marginTop="60dp"
             android:text="@string/john_petrucci"
             android:textColor="@color/textLight2"
             android:textSize="33sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tvWeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            android:layout_marginStart="@dimen/weightHeightMargin"
             android:layout_marginTop="30dp"
+            android:fontFamily="@font/tauri"
             android:text="@string/weight"
-            android:textColor="@color/textLight"
+            android:textColor="@color/darkGrey"
             android:textSize="26sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginStart="@dimen/weightHeightMargin"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <TextView
             android:id="@+id/tvHeight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/name"
             android:layout_marginTop="30dp"
+            android:layout_marginEnd="@dimen/weightHeightMargin"
+            android:fontFamily="@font/tauri"
             android:text="@string/height"
-            android:textColor="@color/textLight"
+            android:textColor="@color/darkGrey"
             android:textSize="26sp"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="@dimen/weightHeightMargin"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/name" />
 
         <TextView
             android:id="@+id/tvWeightKilos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/tvWeight"
+            android:layout_marginStart="@dimen/weightHeightMargin"
             android:layout_marginTop="7dp"
+            android:fontFamily="@font/tauri"
             android:text="@string/_78_kg"
             android:textColor="@color/textLight2"
-            android:textSize="33sp"
+            android:textSize="27sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:layout_marginStart="@dimen/weightHeightMargin"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/tvWeight" />
 
         <TextView
             android:id="@+id/tvHeightCm"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeight"
             android:layout_marginTop="7dp"
+            android:layout_marginEnd="@dimen/weightHeightMargin"
+            android:fontFamily="@font/tauri"
             android:text="@string/_182_cm"
             android:textColor="@color/textLight2"
-            android:textSize="33sp"
+            android:textSize="27sp"
             app:layout_constraintRight_toRightOf="parent"
-            android:layout_marginEnd="@dimen/weightHeightMargin"
-            />
+            app:layout_constraintTop_toBottomOf="@+id/tvHeight" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="15dp"
             android:layout_marginHorizontal="35dp"
-            app:layout_constraintTop_toBottomOf="@id/tvHeightCm"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/small_container_background"
+            android:fontFamily="@font/tauri"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:background="@drawable/small_container_background">
+            app:layout_constraintTop_toBottomOf="@id/tvHeightCm">
 
             <TextView
                 android:id="@+id/squats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="15dp"
-                android:text="@string/squats"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="@dimen/marginExercisesStatistics"
-                app:layout_constraintLeft_toLeftOf="parent"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="@string/squats"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/bench"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/squats"
-                android:layout_marginTop="15dp"
-                android:text="@string/bench_press"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="@dimen/marginExercisesStatistics"
-                app:layout_constraintLeft_toLeftOf="parent"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="@string/bench_press"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/squats" />
 
             <TextView
                 android:id="@+id/deadlift"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/bench"
-                android:layout_marginTop="15dp"
-                android:text="@string/deadlift"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="@dimen/marginExercisesStatistics"
-                app:layout_constraintLeft_toLeftOf="parent"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="@string/deadlift"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/bench" />
 
 
             <TextView
                 android:id="@+id/tvSquats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_marginTop="15dp"
-                android:text="@string/_95kg"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="120dp"
-                app:layout_constraintLeft_toRightOf="@id/squats"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="@string/_95kg"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/squats"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/tvBench"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/squats"
-                android:layout_marginTop="15dp"
-                android:text="65kg"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="120dp"
-                app:layout_constraintLeft_toRightOf="@id/squats"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="65kg"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/squats"
+                app:layout_constraintTop_toBottomOf="@+id/squats" />
 
             <TextView
                 android:id="@+id/tvDeadlift"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:layout_constraintTop_toBottomOf="@+id/tvBench"
-                android:layout_marginTop="15dp"
-                android:text="115kg"
-                android:textColor="@color/textLight"
-                android:textSize="20sp"
                 android:layout_marginStart="120dp"
-                app:layout_constraintLeft_toRightOf="@id/squats"                android:layout_marginEnd="@dimen/weightHeightMargin"
-                />
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="@dimen/weightHeightMargin"
+                android:fontFamily="@font/tauri"
+                android:text="115kg"
+                android:textColor="@color/darkGrey"
+                android:textSize="20sp"
+                app:layout_constraintLeft_toRightOf="@id/squats"
+                app:layout_constraintTop_toBottomOf="@+id/tvBench" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    
-    
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
