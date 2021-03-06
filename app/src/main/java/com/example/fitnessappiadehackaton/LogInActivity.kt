@@ -27,7 +27,7 @@ class LogInActivity : AppCompatActivity() {
                 .replace(R.id.fragmentId, fragment, fragment.javaClass.simpleName)
                 .commit()
             login.setTextColor(Color.parseColor("#35B9E5"))
-            signUp.setTextColor(Color.parseColor("#878686"))
+            signUp.setTextColor(Color.parseColor("#ffffff"))
             nextButton.text = "Log in"
         }
 
@@ -37,7 +37,7 @@ class LogInActivity : AppCompatActivity() {
                 .replace(R.id.fragmentId, fragment, fragment.javaClass.simpleName)
                 .commit()
             signUp.setTextColor(Color.parseColor("#35B9E5"))
-            login.setTextColor(Color.parseColor("#878686"))
+            login.setTextColor(Color.parseColor("#ffffff"))
             nextButton.text = "Sign up"
 
         }
